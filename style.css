@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: red;
+  text-align: center;
+  font-family: "Tajawal", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+}
+
+.gif {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px red;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #ff4444;
+  text-shadow: 0 0 10px red;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ff5555;
+}
