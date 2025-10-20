@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شاشة الترحيب</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>شاشة ترحيب - بدون CSS و JS</title>
 </head>
-<body>
-  <div class="container">
-    <img src="images/fire-puppet.gif" class="gif">
-    <div class="text">أما توردها موارد الأبطال ولا استرح وخل المراجل لأهلها</div>
+<body bgcolor="#000000" link="#ff6666" vlink="#ff6666">
 
-    <audio autoplay loop>
-      <source src="audio/music.mp3" type="audio/mpeg">
-      متصفحك لا يدعم تشغيل الصوت.
-    </audio>
+<!-- جدول لمركزية المحتوى عموديًا وأفقيًا -->
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center" valign="middle">
 
-    <div class="info">
-      <p>Discord.gg/YourServer</p>
-    </div>
-  </div>
+      <!-- صورة / GIF -->
+      <!-- ضع ملف gif في المسار images/fire-puppet.gif أو عدّل المسار -->
+      <img src="images/fire-puppet.gif" alt="GIF" width="480" height="270" border="0">
 
-  <script src="script.js"></script>
+      <!-- سطر نص ثابت -->
+      <br><br>
+      <font size="5" color="#ff5555" face="Tahoma, Arial, 'Segoe UI'">
+        أما توردها موارد الأبطال ولا استرح وخل المراجل لأهلها
+      </font>
+
+      <!-- نص متحرك باستخدام marquee (قد يكون محبب لفكرة الحركة) -->
+      <br><br>
+      <marquee behavior="scroll" direction="left" scrollamount="4" width="80%">
+        <font size="4" color="#ff9999">discord.gg/EHZTXduFm2  —  مرحبًا بك في السيرفر</font>
+      </marquee>
+
+      <!-- مستطيل 'بكسل' بسيط باستخدام جدول (للتقريب من الـ QR / pattern) -->
+      <br><br>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <!-- صفوف مربعات صغيرة أبيض وأسود لإنشاء تأثير شبكة -->
+        <!-- يمكنك استبدال هذا كله بصورة إذا أردت (أسرع وأسهل) -->
+        <!-- هنا مثال 8x16 مربّع صغير -->
+        <!-- كل مربع خليته 8x8 بيكسل تقريبًا -->
+        <!-- لتبديلها بصورة: <img src="images/pixels.png"> -->
+        <tr>
+          <td bgcolor="#fff" width="8" height="8"></td>
+          <td bgcolor="#000" width="8" height="8"></td>
+          <td bgcolor="#ccc" width="8" height="8"></td>
+          <td bgcolor="#000" width="8" height="8"></td>
+          <td bgcolor="#fff" width="8" height="8"></td>
+          <td bgcolor="#000" width="8" height="8"></td>
+          <td bgcolor="#fff" width="8" height="8"></td>
+          <td bgcolor="#000" width="8" height="8"></td>
+        </tr>
+        <!-- انسخ/عدّل الأسطر حسب الشكل اللي بدك إياه -->
+      </table>
+
+      <!-- مشغل صوت (autoplay قد تمنعه بعض المتصفحات) -->
+      <!-- ضع ملف الصوت في audio/music.mp3 أو عدّل المسار -->
+      <br><br>
+      <audio controls autoplay loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        متصفحك لا يدعم تشغيل الصوت.
+      </audio>
+
+      <!-- اختياري: عرض معلومات ثابتة -->
+      <br><br>
+      <font size="2" color="#ff8888">تم الإنشاء بواسطة موقعك — كل الحقوق محفوظة</font>
+
+    </td>
+  </tr>
+</table>
+
 </body>
 </html>
